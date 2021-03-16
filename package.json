@@ -1,18 +1,16 @@
 {
-  "name": "fastify-starter",
+  "name": "graphql-otel-test",
   "version": "1.0.0",
-  "description": "Get started using Fastify with this basic template.",
-  "main": "src/index.js",
+  "description": "Code to ask questions on propagation and traceID",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/start.js",
-    "dev": "nodemon src/start.js",
-    "test": "tap --no-coverage  --no-esm"
+    "start": "node .",
+    "dev": "nodemon ."
   },
   "dependencies": {
     "fastify": "^2.10.0"
   },
   "devDependencies": {
-    "tap": "^14.10.2",
     "nodemon": "^2.0.1"
   },
   "keywords": ["fastify", "node.js", "backend", "server", "http"],
