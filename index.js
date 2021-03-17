@@ -109,13 +109,15 @@ async function bootstrap() {
                     const s = api.getSpan(api.context.active());
                     console.log('results', s === span1) 
                     /**
-                     * Server started
+                     * 
                      * results false
+                     * 
+                     * Those are the results and do not appear to align with
+                     * What was expected (From the linked slack conversation)
+                     * which I understand would be 
                      * */
+                    
                 })
-
-                
-
 
                 return {};
             },
@@ -147,8 +149,10 @@ const resolvers = {
             
             /**
              * query_span is the parent span of the GraphQL Operation
-             * I learned I am able to obtain its Span & SpanContext
+             * I learned (through logging out the GraphQL.context
+             * I am able to obtain the Operation's Span & SpanContext
              * via `GraphQL.context` passed to each GraphQL Operation
+             * housed within the `symbol`
              * 
              * Ideally, I would like to be able to obtain the traceId
              * for the resolvers in the `graphql.context` layer
