@@ -107,7 +107,8 @@ async function bootstrap() {
                 let ctx = api.setSpan(api.context.active(), span1);
                 api.context.with(ctx, () => {
                     const s = api.getSpan(api.context.active());
-                    console.log('results', s === span1) 
+                    // console.log('results', s === span1) // uncomment when running server to see results
+                    // comment out again else the terminal will fill with "false" when GraphQL Playground is open in browser.
                     /**
                      * 
                      * results false
