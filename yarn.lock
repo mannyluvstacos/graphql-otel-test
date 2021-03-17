@@ -60,11 +60,6 @@
   resolved "https://artifactory.gold.mgmt.carezen.net:443/artifactory/api/npm/care-npm-virtual/@opentelemetry/api/-/api-0.18.1.tgz#fb499e07afa1f55acffc47b2469eb218dcdee2a2"
   integrity sha1-+0meB6+h9VrP/EeyRp6yGNze4qI=
 
-"@opentelemetry/api@^1.0.0-rc.0":
-  version "1.0.0-rc.0"
-  resolved "https://artifactory.gold.mgmt.carezen.net:443/artifactory/api/npm/care-npm-virtual/@opentelemetry/api/-/api-1.0.0-rc.0.tgz#0c7c3f5e1285f99cedb563d74ad1adb9822b5144"
-  integrity sha1-DHw/XhKF+ZzttWPXStGtuYIrUUQ=
-
 "@opentelemetry/context-async-hooks@^0.18.0":
   version "0.18.0"
   resolved "https://artifactory.gold.mgmt.carezen.net:443/artifactory/api/npm/care-npm-virtual/@opentelemetry/context-async-hooks/-/context-async-hooks-0.18.0.tgz#bf90e3acf3f2254941742eb8d9f7bb546fa357c6"
