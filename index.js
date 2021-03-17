@@ -98,7 +98,7 @@ async function bootstrap() {
                 */
 
 
-                // From @Daniel Dyla's reply on Slack:
+                // From @dyladan 's reply on Slack:
                 // https://cloud-native.slack.com/archives/C01NL1GRPQR/p1614783815111500?thread_ts=1614782006.111000&cid=C01NL1GRPQR
 
                 //Code example
