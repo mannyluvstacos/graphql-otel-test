@@ -3,17 +3,35 @@
   "version": "1.0.0",
   "description": "Code to ask questions on propagation and traceID",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node .",
     "dev": "nodemon ."
   },
   "dependencies": {
-    "fastify": "^2.10.0"
+    "@opentelemetry/api": "^1.0.0-rc.0",
+    "@opentelemetry/exporter-jaeger": "^0.18.0",
+    "@opentelemetry/exporter-zipkin": "^0.18.0",
+    "@opentelemetry/instrumentation": "^0.18.0",
+    "@opentelemetry/instrumentation-graphql": "^0.14.0",
+    "@opentelemetry/instrumentation-grpc": "^0.18.0",
+    "@opentelemetry/node": "^0.18.0",
+    "@opentelemetry/tracing": "^0.18.0",
+    "apollo-server-fastify": "^2.21.1",
+    "fastify": "^2.14.1",
+    "graphql": "^15.5.0",
+    "pino": "^6.11.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.1"
   },
-  "keywords": ["fastify", "node.js", "backend", "server", "http"],
+  "keywords": [
+    "fastify",
+    "node.js",
+    "backend",
+    "server",
+    "http"
+  ],
   "eslintConfig": {
     "sourceType": "script"
   }

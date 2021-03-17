@@ -1,0 +1,13 @@
+
+
+type Response {
+    foo: String
+    bar: String
+}
+
+
+type Query {
+
+    getSimple():Response
+
+}
