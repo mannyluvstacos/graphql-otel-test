@@ -3,14 +3,14 @@
 /**
  * Opentelemetry Wiring
  */
-import * as api from '@opentelemetry/api'
-import { registerInstrumentations } from '@opentelemetry/instrumentation';
-import { GrpcInstrumentation } from '@opentelemetry/instrumentation-grpc';
-import { GraphQLInstrumentation } from '@opentelemetry/instrumentation-graphql';
-import { NodeTracerProvider } from '@opentelemetry/node';
-import { SimpleSpanProcessor } from '@opentelemetry/tracing'
-import { ZipkinExporter } from '@opentelemetry/exporter-zipkin';
-import { JaegerExporter } from '@opentelemetry/exporter-jaeger';
+const api = require('@opentelemetry/api')
+const { registerInstrumentations } = require('@opentelemetry/instrumentation');
+const { GrpcInstrumentation } = require('@opentelemetry/instrumentation-grpc');
+const { GraphQLInstrumentation } = require('@opentelemetry/instrumentation-graphql');
+const { NodeTracerProvider } = require('@opentelemetry/node');
+const { SimpleSpanProcessor } = require('@opentelemetry/tracing');
+const { ZipkinExporter } = require('@opentelemetry/exporter-zipkin');
+const { JaegerExporter } = require('@opentelemetry/exporter-jaeger');
 
 
 const zipkinExporter = new ZipkinExporter({
@@ -46,9 +46,9 @@ registerInstrumentations({
  */
 
 
-import { ApolloServer, gql } from 'apollo-server-fastify';
-import fastify from 'fastify';
-import pino from 'pino';
+const { ApolloServer, gql } = require('apollo-server-fastify');
+const fastify = require('fastify');
+const pino = require('pino');
 
 
 const resolvers = {
